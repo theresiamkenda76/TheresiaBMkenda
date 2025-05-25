@@ -1,0 +1,1873 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/theresiamkenda76/TheresiaBMkenda/blob/main/Day_1_%26_2_Notebook_mypractice\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "Rwj7csLAZK7t"
+      },
+      "outputs": [],
+      "source": [
+        "# Numbers in Python\n",
+        "a = 10 # int\n",
+        "b = 1.2# float\n",
+        "c=8 # int\n",
+        "d=1.67 #float\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Python List:\n",
+        "even = [2,4,6]\n",
+        "odd = list((1,3,5))"
+      ],
+      "metadata": {
+        "id": "Q1Y1F9blZyh8"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "S = \"Enter your text:\"\n",
+        "lower_case = S.lower()\n",
+        "upper_case = S.upper()\n"
+      ],
+      "metadata": {
+        "id": "8oRPiea3Z3cj"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lower_case"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "i4rddChwanNV",
+        "outputId": "53cd7f52-a1e1-4b50-bd07-f06ff03cb60e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'enter your text:'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 4
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "upper_case"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "snnsDFATapCz",
+        "outputId": "b3ae6ee0-ea06-4da9-dc6d-575bd4ecf9dc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'ENTER YOUR TEXT:'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 5
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "even[2] = 100 # Change the 3rd element to 100\n",
+        "even_ = even * 2 # Concat the same list 2 times"
+      ],
+      "metadata": {
+        "id": "rqxwy05Saqdy"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "even.append([100, 200, 300]) # Append another list to existing one"
+      ],
+      "metadata": {
+        "id": "o3yVIoICaujz"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Python tupple: Immutable\n",
+        "even_tuple = (6, 8, 10)\n",
+        "list(even_tuple)[0] = 100"
+      ],
+      "metadata": {
+        "id": "KWMe_Rqba5Cy"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "even_tuple[0] = 100 # change first ellent to 100: immutable"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 141
+        },
+        "id": "mAxQOiYva8Vm",
+        "outputId": "5e516641-3c88-4db6-a533-69e1b678b749"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "'tuple' object does not support item assignment",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-9-77e81ce4f1a4>\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0meven_tuple\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;36m100\u001b[0m \u001b[0;31m# change first ellent to 100: immutable\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m: 'tuple' object does not support item assignment"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "even_tuple.append(200)# Not allowed"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 141
+        },
+        "id": "vqODTHOra_E3",
+        "outputId": "b6382e92-bf78-41b3-fb9e-28787fbf6787"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "AttributeError",
+          "evalue": "'tuple' object has no attribute 'append'",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mAttributeError\u001b[0m                            Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-10-5949aa1ea3a9>\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0meven_tuple\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mappend\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m200\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;31m# Not allowed\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mAttributeError\u001b[0m: 'tuple' object has no attribute 'append'"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Python dictionary\n",
+        "even_dict = {\"a\": 20, \"b\": 40, \"c\": 60}\n",
+        "\n",
+        "print(list(even_dict.values())) # print all values\n",
+        "print(list(even_dict.keys())) # print all keys of the dictionary\n",
+        "# Iterate over a dict\n",
+        "for k, v in even_dict.items():\n",
+        "    print(f\"key: {k}, value: {v}\")\n",
+        "# More can be done..."
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BuiLCxuKbDwd",
+        "outputId": "e4d3d0f3-4d1b-4f67-96e2-9edb0030e5cf"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[20, 40, 60]\n",
+            "['a', 'b', 'c']\n",
+            "key: a, value: 20\n",
+            "key: b, value: 40\n",
+            "key: c, value: 60\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Python Set: {Uni}\n",
+        "set1 = set((1,2,3,4,5,5,6,7,8,8,8,9))\n",
+        "set2 = {1,2,3,4,5,5,5,6,7,8,8,8,9}\n",
+        "print(f\"set1: {set1}, set2: {set2}\")\n",
+        "# More operations are available such as .add, .remove, ..etc"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AYtnQeGYbHR-",
+        "outputId": "50e2ba7f-9566-46e5-8b6d-937ca04f27d8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "set1: {1, 2, 3, 4, 5, 6, 7, 8, 9}, set2: {1, 2, 3, 4, 5, 6, 7, 8, 9}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Type conversions for data cleaning\n",
+        "#==============================================================================\n",
+        "raw_value = \"34.7\"  # Common scenario: string from CSV files\n",
+        "clean_float = float(raw_value) # casting\n",
+        "print(f\"Type: {type(clean_float)}, Value: {clean_float}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cIUsn9vnbKm5",
+        "outputId": "b97c3319-454a-4454-883b-236447e574a0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Type: <class 'float'>, Value: 34.7\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Conditional statements in Python:\n",
+        "#===============================================================================\n",
+        "# If statement\n",
+        "x = 10\n",
+        "if x > 5:\n",
+        "    print(\"x is greater than 5\")\n",
+        "\n",
+        "# If else statement\n",
+        "x = 3\n",
+        "if x > 5:\n",
+        "    print(\"x is greater than 5\")\n",
+        "else:\n",
+        "    print(\"x is 5 or less\")\n",
+        "\n",
+        "# Extension of if else\n",
+        "x = 5\n",
+        "if x > 5:\n",
+        "    print(\"x is greater than 5\")\n",
+        "elif x == 5:\n",
+        "    print(\"x is exactly 5\")\n",
+        "else:\n",
+        "    print(\"x is less than 5\")\n",
+        "\n",
+        "age = 25\n",
+        "income = 40000\n",
+        "\n",
+        "if age > 18 and income > 30000:\n",
+        "    print(\"Eligible\")\n",
+        "\n",
+        "if age < 18 or income < 10000:\n",
+        "    print(\"Not eligible\")\n",
+        "\n",
+        "if not (age < 18):\n",
+        "    print(\"Adult\")\n",
+        "\n",
+        "# Many tricks are available...."
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TS0Py6pgbNpf",
+        "outputId": "dc36a1d5-fcf6-4151-9144-81b6e91b821e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "x is greater than 5\n",
+            "x is 5 or less\n",
+            "x is exactly 5\n",
+            "Eligible\n",
+            "Adult\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Boolean logic for hypothesis testing\n",
+        "effect_present = True\n",
+        "sample_size = 61\n",
+        "sample_adequacy = (sample_size >= 30)\n",
+        "decision = effect_present and sample_adequacy\n",
+        "print(f\"Conclusion valid? {decision}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8hGFbMFSbRUC",
+        "outputId": "eea185a4-0fa5-465b-a491-93acab61be51"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Conclusion valid? True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = True\n",
+        "b = 60\n",
+        "c = False\n",
+        "d = a and c\n",
+        "print(d)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4_5LN0_bbU3X",
+        "outputId": "3f216631-6600-4a50-f05b-2831bdaa9b09"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Some boolean operations\n",
+        "True and True\n",
+        "True or True\n",
+        "True or False\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fbzZCcyabXci",
+        "outputId": "cf5fd4ec-b857-4ba1-e537-823479dc80f5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 17
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "False | True"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yuf_uGSsbkTB",
+        "outputId": "517fa591-4783-4121-beb7-7b6a1a010667"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 18
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "True & True"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CNY2fzPobnt4",
+        "outputId": "99d0e7ed-8213-41dd-8eb1-482223c220e3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 19
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Elif ladder for multiple hypothesis outcomes\n",
+        "p_value = 0.07\n",
+        "alpha = 0.05\n",
+        "\n",
+        "if p_value < 0.01:\n",
+        "    print(\"Strong evidence against H₀\")\n",
+        "elif p_value < alpha:\n",
+        "    print(\"Reject H₀\")\n",
+        "else:\n",
+        "    print(\"Fail to reject H₀\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JigsXou1bu4G",
+        "outputId": "9de17d0e-d65b-4cf4-ff63-dade725e3170"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Fail to reject H₀\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# While loop & application for convergence checks (Simple simulation)\n",
+        "iteration = 1\n",
+        "current_error = 15.7\n",
+        "while current_error > 0.5:\n",
+        "    print(f\"Iteration {iteration}: Error={current_error}\")\n",
+        "    current_error *= 0.8  # Simulating error reduction==> current_ = current * 0.8\n",
+        "    iteration += 1\n",
+        "\n",
+        "# More on while & for loops can be added..."
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CcgKelgRby_T",
+        "outputId": "164d4b20-effe-4e77-a7c2-cf72d3d46372"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Iteration 1: Error=15.7\n",
+            "Iteration 2: Error=12.56\n",
+            "Iteration 3: Error=10.048000000000002\n",
+            "Iteration 4: Error=8.038400000000001\n",
+            "Iteration 5: Error=6.430720000000001\n",
+            "Iteration 6: Error=5.144576000000001\n",
+            "Iteration 7: Error=4.115660800000001\n",
+            "Iteration 8: Error=3.2925286400000005\n",
+            "Iteration 9: Error=2.6340229120000007\n",
+            "Iteration 10: Error=2.1072183296000007\n",
+            "Iteration 11: Error=1.6857746636800006\n",
+            "Iteration 12: Error=1.3486197309440007\n",
+            "Iteration 13: Error=1.0788957847552005\n",
+            "Iteration 14: Error=0.8631166278041604\n",
+            "Iteration 15: Error=0.6904933022433284\n",
+            "Iteration 16: Error=0.5523946417946627\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "L = [1,20, 10, 0.8]\n",
+        "sorted(L)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "01oNeue4b2Gt",
+        "outputId": "ae1ba83c-895e-4f2e-8b1c-f80ccec635a0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[0.8, 1, 10, 20]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 22
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Python List & Application in data analysis: Calculate confidence intervals\n",
+        "data = [72, 68, 75, 81, 69, 65, 78, 82, 70, 77]\n",
+        "n = len(data)\n",
+        "mean = sum(data)/n\n",
+        "sorted_data = sorted(data)\n",
+        "lower_ci = sorted_data[int(0.025*n)]\n",
+        "upper_ci = sorted_data[int(0.975*n)]\n",
+        "\n",
+        "print(f\"Bootstrap 95% CI: [{lower_ci}, {upper_ci}]\")\n",
+        "# More operations using Python list can be added"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IwKkToXYb5PV",
+        "outputId": "649cc347-ea85-4ad6-a03e-f699e16b6b1e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Bootstrap 95% CI: [65, 82]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Python tuple and application in storing statistical test parameters\n",
+        "\n",
+        "t_test_config = (\n",
+        "    \"two-sample\",              # test type\n",
+        "    \"unequal_var\",             # variance assumption\n",
+        "    {\"alpha\": 0.05, \"alternative\": \"two-sided\"}  # test parameters\n",
+        ")\n",
+        "\n",
+        "print(f\"Performing {t_test_config[0]} t-test with {t_test_config[2]['alternative']} alternative and alpha={t_test_config[2]['alpha']}\")\n",
+        "# More operations on tuple can be added"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ze5ge7ysb73l",
+        "outputId": "a50d1e77-d408-490b-8460-1c8010a9cf3f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Performing two-sample t-test with two-sided alternative and alpha=0.05\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Python dictionary and example of a data structure\n",
+        "trial_data = {\n",
+        "    \"treatment_group\": {\n",
+        "        \"n\": 150,\n",
+        "        \"mean_improvement\": 12.7,\n",
+        "        \"std_dev\": 4.3\n",
+        "    },\n",
+        "    \"control_group\": {\n",
+        "        \"n\": 145,\n",
+        "        \"mean_improvement\": 9.1,\n",
+        "        \"std_dev\": 5.2\n",
+        "    }\n",
+        "}"
+      ],
+      "metadata": {
+        "id": "0nO4TcMZcE7k"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Accessing nested data\n",
+        "effect_size = (trial_data[\"treatment_group\"][\"mean_improvement\"]\n",
+        "               - trial_data[\"control_group\"][\"mean_improvement\"])\n",
+        "print(f\"Absolute treatment effect: {effect_size:.1f} points\")\n",
+        "\n",
+        "# Other dictionary operations can be explored"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "C2pK9DPvcL6g",
+        "outputId": "70c811b2-1a54-4dd9-a158-b14179ac5248"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Absolute treatment effect: 3.6 points\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Python sets and an example on validate survey response categories\n",
+        "allowed_responses = {\"strongly_agree\", \"agree\", \"neutral\", \"disagree\", \"strongly_disagree\"}\n",
+        "actual_responses = {\"agree\", \"neutral\", \"undecided\", \"agree\"}\n",
+        "\n",
+        "invalid_responses = actual_responses - allowed_responses\n",
+        "print(f\"Invalid responses to filter: {invalid_responses}\")\n",
+        "\n",
+        "# Other common sets operations can be added"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tkpOeyJecP5A",
+        "outputId": "da35dc41-2637-4931-90b4-db8e7c095d52"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Invalid responses to filter: {'undecided'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Comprehension in Python: An example to create covariance\n",
+        "#====================================================================\n",
+        "# We start with the easier cases such\n",
+        "# -List comprehension, dictionary comprehesion, etc.\n",
+        "#====================================================================\n",
+        "\n",
+        "# Nested comprehension\n",
+        "\n",
+        "\n",
+        "variables = [\"X\", \"Y\", \"Z\"]\n",
+        "cov_matrix = {\n",
+        "    row: {col: 0.5 if row != col else 1.0 for col in variables}\n",
+        "    for row in variables\n",
+        "}\n",
+        "\n",
+        "print(\"Simulated Covariance Matrix:\")\n",
+        "for row in cov_matrix:\n",
+        "    print(f\"{row}: {cov_matrix[row]}\")\n",
+        "\n",
+        "# Memory-efficient sum of squares (better for big data)\n",
+        "large_dataset = (x**2 for x in range(1000000))  # Generator, not list\n",
+        "total = sum(large_dataset)\n",
+        "print(f\"Sum of squares for 1M elements: {total:,}\")\n",
+        "\n",
+        "# More examples on Comprehensions can be added"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cTU0c7UgcXd7",
+        "outputId": "e58877e0-cd2c-4739-b06a-b311dbfd3471"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Simulated Covariance Matrix:\n",
+            "X: {'X': 1.0, 'Y': 0.5, 'Z': 0.5}\n",
+            "Y: {'X': 0.5, 'Y': 1.0, 'Z': 0.5}\n",
+            "Z: {'X': 0.5, 'Y': 0.5, 'Z': 1.0}\n",
+            "Sum of squares for 1M elements: 333,332,833,333,500,000\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Functions\n",
+        "def add(a, b):\n",
+        "  s = a + b\n",
+        "  #print(s)\n",
+        "  return s"
+      ],
+      "metadata": {
+        "id": "UEXVsdcYcdeU"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Calling a function\n",
+        "s = add(50, 4)"
+      ],
+      "metadata": {
+        "id": "5vgVtXqkcipD"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "vilages = [\"A\", \"B\", \"C\", \"D\"]"
+      ],
+      "metadata": {
+        "id": "mWkR7UprclP2"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random"
+      ],
+      "metadata": {
+        "id": "T919pmjwco8K"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for res in range(3):\n",
+        "  for i in range(5):\n",
+        "    print(random.choice(vilages))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ykEhNYLIcuGz",
+        "outputId": "28a5d135-5506-4caa-bcfe-b6d539eb5517"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "D\n",
+            "A\n",
+            "A\n",
+            "D\n",
+            "B\n",
+            "C\n",
+            "A\n",
+            "B\n",
+            "B\n",
+            "B\n",
+            "C\n",
+            "B\n",
+            "D\n",
+            "B\n",
+            "A\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Simulate household survey data\n",
+        "def simulate_subjects(subject_id):\n",
+        "    data = {\n",
+        "      \"id\": subject_id,\n",
+        "        \"age\": random.randint(18, 90),\n",
+        "        \"residense\": random.choice([\"rural\", \"urban\"]),\n",
+        "        \"consuption\": f\"{random.gauss(100, 15):.4f}\",\n",
+        "        \"income\": f\"{random.gauss(215, 10):.4f}\" if random.random() < 0.3 else None  # Missing data simulation\n",
+        "    }\n",
+        "    return data"
+      ],
+      "metadata": {
+        "id": "bn-RPW4vcuyQ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Generate 1000 respondents\n",
+        "study_population = [simulate_subjects(i) for i in range(10)]"
+      ],
+      "metadata": {
+        "id": "EibyHXXPc0B3"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Print all income\n",
+        "for p in study_population:\n",
+        "  print(p[\"income\"])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "76WPg7zjc3Vc",
+        "outputId": "a5d936d1-b811-41a3-e5ad-3fdb4b00d230"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "None\n",
+            "None\n",
+            "193.4361\n",
+            "None\n",
+            "None\n",
+            "185.3855\n",
+            "None\n",
+            "None\n",
+            "215.7385\n",
+            "None\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Show first 3 subjects\n",
+        "for subject in study_population[:3]:\n",
+        "    print(subject)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6ZEjFbSjc9k6",
+        "outputId": "48e6e627-7585-4f70-9a4d-044eb672a330"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'id': 0, 'age': 58, 'residense': 'urban', 'consuption': '83.7293', 'income': None}\n",
+            "{'id': 1, 'age': 40, 'residense': 'rural', 'consuption': '76.8149', 'income': None}\n",
+            "{'id': 2, 'age': 72, 'residense': 'urban', 'consuption': '121.2139', 'income': '193.4361'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Error handling: Safely handle missing data\n",
+        "def safe_average(values):\n",
+        "    try:\n",
+        "        clean = [float(x) for x in values if x is not None]\n",
+        "        return sum(clean)/len(clean)\n",
+        "    except ZeroDivisionError:\n",
+        "        print(\"Warning: All values missing!\")\n",
+        "        return None"
+      ],
+      "metadata": {
+        "id": "ahNhOsHgdDPi"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# You can Test with real-world missing data\n",
+        "income_results = [p[\"income\"] for p in study_population]\n",
+        "print(f\"Average income result: {safe_average(income_results):.1f}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "osMS3JkmdGNq",
+        "outputId": "f61ba1c4-a380-4848-fe63-1b9a2c3021e9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Average income result: 198.2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Exerices\n",
+        "#======================================================================\n",
+        "# Simulate Python data dictionary with columns such as \"Income category (low, medium, high)\", \"Age category such as \"teen\", \"adult\", \"senior\", \"location such as rural, urban\", \"social security such as yes, no\"\n",
+        "===================================================================================================================\n"
+      ],
+      "metadata": {
+        "id": "HHuvyV2jdMw_"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "income = [random.gauss(120, 30) for i in range(10)]\n",
+        "med_inc = sorted(income)[int(len(income)/2)]\n",
+        "income_cat = []\n",
+        "for i in range(len(income)):\n",
+        "    if sorted(income)[i]< 100:\n",
+        "        income_cat.append(\"low\")\n",
+        "    elif sorted(income)[i] > med_inc:\n",
+        "        income_cat.append(\"high\")\n",
+        "    else:\n",
+        "        income_cat.append(\"mediam\")\n"
+      ],
+      "metadata": {
+        "id": "XwtlMgsDedgn"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "income_cat"
+      ],
+      "metadata": {
+        "id": "mI03UdXQj3p8"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age = [random.randint(a = 0, b = 120) for _ in range(10)]"
+      ],
+      "metadata": {
+        "id": "APen6ojom36Z"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "OkVcsTaAm33Y"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age_cat = []\n",
+        "for i in range(len(age)):\n",
+        "    if sorted(age)[i] < 18:\n",
+        "        age_cat.append(\"teen\")\n",
+        "    elif 18 <= sorted(age)[i] < 35:\n",
+        "        age_cat.append(\"adult\")\n",
+        "    else:\n",
+        "        age_cat.append(\"senior citizen\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "J1Jt_tCim30d"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "social_security = []\n",
+        "for i in range(len(age)):\n",
+        "    if age[i] < 18:\n",
+        "        social_security.append(False)\n",
+        "    else:\n",
+        "        social_security.append(True)"
+      ],
+      "metadata": {
+        "id": "UQgRPivzpGWv"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "social_security"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "w5tFITKxpGTB",
+        "outputId": "c3c9ac5f-af81-4e87-c078-0d85d1069b80"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[True, True, True, True, True, True, False, True, False, True]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 87
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "place = [\"rural\", \"urban\"]\n",
+        "location = [random.choice(place) for i in range(len(age))]"
+      ],
+      "metadata": {
+        "id": "vptYDfoTpGQU"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "location"
+      ],
+      "metadata": {
+        "id": "er1z54ZmoOJZ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def categorical_data(sample_size: int):\n",
+        "    income = [random.gauss(120, 30) for i in range(sample_size)]\n",
+        "    med_inc = sorted(income)[int(len(income)/2)]\n",
+        "\n",
+        "    income_cat = []\n",
+        "    social_security = []\n",
+        "    age_cat = []\n",
+        "    place = [\"rural\", \"urban\"]\n",
+        "    age = [random.randint(a = 0, b = 120) for _ in range(sample_size)]\n",
+        "    ID = [i for i in range(sample_size)]\n",
+        "\n",
+        "    # Simulate categorical income\n",
+        "    for i in range(len(income)):\n",
+        "        if sorted(income)[i]< 100:\n",
+        "            income_cat.append(\"low\")\n",
+        "        elif sorted(income)[i] > med_inc:\n",
+        "            income_cat.append(\"high\")\n",
+        "        else:\n",
+        "            income_cat.append(\"mediam\")\n",
+        "\n",
+        "    # Simulate age group\n",
+        "    for i in range(len(age)):\n",
+        "        if age[i] < 18:\n",
+        "            social_security.append(False)\n",
+        "        else:\n",
+        "            social_security.append(True)\n",
+        "\n",
+        "    # Simulate\n",
+        "    for i in range(len(age)):\n",
+        "        if sorted(age)[i] < 18:\n",
+        "            age_cat.append(\"teen\")\n",
+        "        elif 18 <= sorted(age)[i] < 35:\n",
+        "            age_cat.append(\"adult\")\n",
+        "        else:\n",
+        "            age_cat.append(\"senior citizen\")\n",
+        "\n",
+        "    location = [random.choice(place) for i in range(len(age))]\n",
+        "\n",
+        "    catdata = {\"ID\": ID, \"Location\": location, \"Age\": age_cat, \"Income\": income_cat, \"SocialSecurity\": social_security}\n",
+        "\n",
+        "    return catdata\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "-eCGXn3nrXkq"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df = categorical_data(30)"
+      ],
+      "metadata": {
+        "id": "hs6ixJJNrXhN"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "Xcg22S_IrXd3"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "dfm = pd.DataFrame(df)"
+      ],
+      "metadata": {
+        "id": "fzT1_BVVmef5"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dfm"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 990
+        },
+        "id": "uzJE1tZ2vxbV",
+        "outputId": "f7954b75-c70c-430b-d84b-15fac2cfb108"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "    ID Location             Age  Income  SocialSecurity\n",
+              "0    0    urban            teen     low            True\n",
+              "1    1    urban            teen     low            True\n",
+              "2    2    rural            teen     low            True\n",
+              "3    3    rural           adult     low           False\n",
+              "4    4    urban           adult     low            True\n",
+              "5    5    rural           adult     low            True\n",
+              "6    6    urban           adult     low            True\n",
+              "7    7    rural  senior citizen     low            True\n",
+              "8    8    rural  senior citizen     low            True\n",
+              "9    9    rural  senior citizen     low            True\n",
+              "10  10    urban  senior citizen     low            True\n",
+              "11  11    rural  senior citizen  mediam            True\n",
+              "12  12    urban  senior citizen  mediam            True\n",
+              "13  13    urban  senior citizen  mediam            True\n",
+              "14  14    rural  senior citizen  mediam            True\n",
+              "15  15    urban  senior citizen  mediam            True\n",
+              "16  16    urban  senior citizen    high            True\n",
+              "17  17    urban  senior citizen    high            True\n",
+              "18  18    urban  senior citizen    high           False\n",
+              "19  19    urban  senior citizen    high            True\n",
+              "20  20    urban  senior citizen    high            True\n",
+              "21  21    urban  senior citizen    high           False\n",
+              "22  22    rural  senior citizen    high            True\n",
+              "23  23    urban  senior citizen    high            True\n",
+              "24  24    urban  senior citizen    high            True\n",
+              "25  25    urban  senior citizen    high            True\n",
+              "26  26    urban  senior citizen    high            True\n",
+              "27  27    urban  senior citizen    high            True\n",
+              "28  28    urban  senior citizen    high            True\n",
+              "29  29    rural  senior citizen    high            True"
+            ],
+            "text/html": [
+              "\n",
+              "  <div id=\"df-7d8b6956-03ad-4562-b638-89cf55625b4e\" class=\"colab-df-container\">\n",
+              "    <div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>ID</th>\n",
+              "      <th>Location</th>\n",
+              "      <th>Age</th>\n",
+              "      <th>Income</th>\n",
+              "      <th>SocialSecurity</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>0</th>\n",
+              "      <td>0</td>\n",
+              "      <td>urban</td>\n",
+              "      <td>teen</td>\n",
+              "      <td>low</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>1</th>\n",
+              "      <td>1</td>\n",
+              "      <td>urban</td>\n",
+              "      <td>teen</td>\n",
+              "      <td>low</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>2</th>\n",
+              "      <td>2</td>\n",
+              "      <td>rural</td>\n",
+              "      <td>teen</td>\n",
+              "      <td>low</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>3</th>\n",
+              "      <td>3</td>\n",
+              "      <td>rural</td>\n",
+              "      <td>adult</td>\n",
+              "      <td>low</td>\n",
+              "      <td>False</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>4</th>\n",
+              "      <td>4</td>\n",
+              "      <td>urban</td>\n",
+              "      <td>adult</td>\n",
+              "      <td>low</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>5</th>\n",
+              "      <td>5</td>\n",
+              "      <td>rural</td>\n",
+              "      <td>adult</td>\n",
+              "      <td>low</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>6</th>\n",
+              "      <td>6</td>\n",
+              "      <td>urban</td>\n",
+              "      <td>adult</td>\n",
+              "      <td>low</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>7</th>\n",
+              "      <td>7</td>\n",
+              "      <td>rural</td>\n",
+              "      <td>senior citizen</td>\n",
+              "      <td>low</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>8</th>\n",
+              "      <td>8</td>\n",
+              "      <td>rural</td>\n",
+              "      <td>senior citizen</td>\n",
+              "      <td>low</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>9</th>\n",
+              "      <td>9</td>\n",
+              "      <td>rural</td>\n",
+              "      <td>senior citizen</td>\n",
+              "      <td>low</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>10</th>\n",
+              "      <td>10</td>\n",
+              "      <td>urban</td>\n",
+              "      <td>senior citizen</td>\n",
+              "      <td>low</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>11</th>\n",
+              "      <td>11</td>\n",
+              "      <td>rural</td>\n",
+              "      <td>senior citizen</td>\n",
+              "      <td>mediam</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>12</th>\n",
+              "      <td>12</td>\n",
+              "      <td>urban</td>\n",
+              "      <td>senior citizen</td>\n",
+              "      <td>mediam</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>13</th>\n",
+              "      <td>13</td>\n",
+              "      <td>urban</td>\n",
+              "      <td>senior citizen</td>\n",
+              "      <td>mediam</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>14</th>\n",
+              "      <td>14</td>\n",
+              "      <td>rural</td>\n",
+              "      <td>senior citizen</td>\n",
+              "      <td>mediam</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>15</th>\n",
+              "      <td>15</td>\n",
+              "      <td>urban</td>\n",
+              "      <td>senior citizen</td>\n",
+              "      <td>mediam</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>16</th>\n",
+              "      <td>16</td>\n",
+              "      <td>urban</td>\n",
+              "      <td>senior citizen</td>\n",
+              "      <td>high</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>17</th>\n",
+              "      <td>17</td>\n",
+              "      <td>urban</td>\n",
+              "      <td>senior citizen</td>\n",
+              "      <td>high</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>18</th>\n",
+              "      <td>18</td>\n",
+              "      <td>urban</td>\n",
+              "      <td>senior citizen</td>\n",
+              "      <td>high</td>\n",
+              "      <td>False</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>19</th>\n",
+              "      <td>19</td>\n",
+              "      <td>urban</td>\n",
+              "      <td>senior citizen</td>\n",
+              "      <td>high</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>20</th>\n",
+              "      <td>20</td>\n",
+              "      <td>urban</td>\n",
+              "      <td>senior citizen</td>\n",
+              "      <td>high</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>21</th>\n",
+              "      <td>21</td>\n",
+              "      <td>urban</td>\n",
+              "      <td>senior citizen</td>\n",
+              "      <td>high</td>\n",
+              "      <td>False</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>22</th>\n",
+              "      <td>22</td>\n",
+              "      <td>rural</td>\n",
+              "      <td>senior citizen</td>\n",
+              "      <td>high</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>23</th>\n",
+              "      <td>23</td>\n",
+              "      <td>urban</td>\n",
+              "      <td>senior citizen</td>\n",
+              "      <td>high</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>24</th>\n",
+              "      <td>24</td>\n",
+              "      <td>urban</td>\n",
+              "      <td>senior citizen</td>\n",
+              "      <td>high</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>25</th>\n",
+              "      <td>25</td>\n",
+              "      <td>urban</td>\n",
+              "      <td>senior citizen</td>\n",
+              "      <td>high</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>26</th>\n",
+              "      <td>26</td>\n",
+              "      <td>urban</td>\n",
+              "      <td>senior citizen</td>\n",
+              "      <td>high</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>27</th>\n",
+              "      <td>27</td>\n",
+              "      <td>urban</td>\n",
+              "      <td>senior citizen</td>\n",
+              "      <td>high</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>28</th>\n",
+              "      <td>28</td>\n",
+              "      <td>urban</td>\n",
+              "      <td>senior citizen</td>\n",
+              "      <td>high</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>29</th>\n",
+              "      <td>29</td>\n",
+              "      <td>rural</td>\n",
+              "      <td>senior citizen</td>\n",
+              "      <td>high</td>\n",
+              "      <td>True</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "</div>\n",
+              "    <div class=\"colab-df-buttons\">\n",
+              "\n",
+              "  <div class=\"colab-df-container\">\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-7d8b6956-03ad-4562-b638-89cf55625b4e')\"\n",
+              "            title=\"Convert this dataframe to an interactive table.\"\n",
+              "            style=\"display:none;\">\n",
+              "\n",
+              "  <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\" viewBox=\"0 -960 960 960\">\n",
+              "    <path d=\"M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z\"/>\n",
+              "  </svg>\n",
+              "    </button>\n",
+              "\n",
+              "  <style>\n",
+              "    .colab-df-container {\n",
+              "      display:flex;\n",
+              "      gap: 12px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert {\n",
+              "      background-color: #E8F0FE;\n",
+              "      border: none;\n",
+              "      border-radius: 50%;\n",
+              "      cursor: pointer;\n",
+              "      display: none;\n",
+              "      fill: #1967D2;\n",
+              "      height: 32px;\n",
+              "      padding: 0 0 0 0;\n",
+              "      width: 32px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert:hover {\n",
+              "      background-color: #E2EBFA;\n",
+              "      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);\n",
+              "      fill: #174EA6;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-buttons div {\n",
+              "      margin-bottom: 4px;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert {\n",
+              "      background-color: #3B4455;\n",
+              "      fill: #D2E3FC;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert:hover {\n",
+              "      background-color: #434B5C;\n",
+              "      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);\n",
+              "      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));\n",
+              "      fill: #FFFFFF;\n",
+              "    }\n",
+              "  </style>\n",
+              "\n",
+              "    <script>\n",
+              "      const buttonEl =\n",
+              "        document.querySelector('#df-7d8b6956-03ad-4562-b638-89cf55625b4e button.colab-df-convert');\n",
+              "      buttonEl.style.display =\n",
+              "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
+              "\n",
+              "      async function convertToInteractive(key) {\n",
+              "        const element = document.querySelector('#df-7d8b6956-03ad-4562-b638-89cf55625b4e');\n",
+              "        const dataTable =\n",
+              "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
+              "                                                    [key], {});\n",
+              "        if (!dataTable) return;\n",
+              "\n",
+              "        const docLinkHtml = 'Like what you see? Visit the ' +\n",
+              "          '<a target=\"_blank\" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'\n",
+              "          + ' to learn more about interactive tables.';\n",
+              "        element.innerHTML = '';\n",
+              "        dataTable['output_type'] = 'display_data';\n",
+              "        await google.colab.output.renderOutput(dataTable, element);\n",
+              "        const docLink = document.createElement('div');\n",
+              "        docLink.innerHTML = docLinkHtml;\n",
+              "        element.appendChild(docLink);\n",
+              "      }\n",
+              "    </script>\n",
+              "  </div>\n",
+              "\n",
+              "\n",
+              "    <div id=\"df-1671a2b0-5939-4bf0-b180-e607fd6939e4\">\n",
+              "      <button class=\"colab-df-quickchart\" onclick=\"quickchart('df-1671a2b0-5939-4bf0-b180-e607fd6939e4')\"\n",
+              "                title=\"Suggest charts\"\n",
+              "                style=\"display:none;\">\n",
+              "\n",
+              "<svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\"viewBox=\"0 0 24 24\"\n",
+              "     width=\"24px\">\n",
+              "    <g>\n",
+              "        <path d=\"M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z\"/>\n",
+              "    </g>\n",
+              "</svg>\n",
+              "      </button>\n",
+              "\n",
+              "<style>\n",
+              "  .colab-df-quickchart {\n",
+              "      --bg-color: #E8F0FE;\n",
+              "      --fill-color: #1967D2;\n",
+              "      --hover-bg-color: #E2EBFA;\n",
+              "      --hover-fill-color: #174EA6;\n",
+              "      --disabled-fill-color: #AAA;\n",
+              "      --disabled-bg-color: #DDD;\n",
+              "  }\n",
+              "\n",
+              "  [theme=dark] .colab-df-quickchart {\n",
+              "      --bg-color: #3B4455;\n",
+              "      --fill-color: #D2E3FC;\n",
+              "      --hover-bg-color: #434B5C;\n",
+              "      --hover-fill-color: #FFFFFF;\n",
+              "      --disabled-bg-color: #3B4455;\n",
+              "      --disabled-fill-color: #666;\n",
+              "  }\n",
+              "\n",
+              "  .colab-df-quickchart {\n",
+              "    background-color: var(--bg-color);\n",
+              "    border: none;\n",
+              "    border-radius: 50%;\n",
+              "    cursor: pointer;\n",
+              "    display: none;\n",
+              "    fill: var(--fill-color);\n",
+              "    height: 32px;\n",
+              "    padding: 0;\n",
+              "    width: 32px;\n",
+              "  }\n",
+              "\n",
+              "  .colab-df-quickchart:hover {\n",
+              "    background-color: var(--hover-bg-color);\n",
+              "    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);\n",
+              "    fill: var(--button-hover-fill-color);\n",
+              "  }\n",
+              "\n",
+              "  .colab-df-quickchart-complete:disabled,\n",
+              "  .colab-df-quickchart-complete:disabled:hover {\n",
+              "    background-color: var(--disabled-bg-color);\n",
+              "    fill: var(--disabled-fill-color);\n",
+              "    box-shadow: none;\n",
+              "  }\n",
+              "\n",
+              "  .colab-df-spinner {\n",
+              "    border: 2px solid var(--fill-color);\n",
+              "    border-color: transparent;\n",
+              "    border-bottom-color: var(--fill-color);\n",
+              "    animation:\n",
+              "      spin 1s steps(1) infinite;\n",
+              "  }\n",
+              "\n",
+              "  @keyframes spin {\n",
+              "    0% {\n",
+              "      border-color: transparent;\n",
+              "      border-bottom-color: var(--fill-color);\n",
+              "      border-left-color: var(--fill-color);\n",
+              "    }\n",
+              "    20% {\n",
+              "      border-color: transparent;\n",
+              "      border-left-color: var(--fill-color);\n",
+              "      border-top-color: var(--fill-color);\n",
+              "    }\n",
+              "    30% {\n",
+              "      border-color: transparent;\n",
+              "      border-left-color: var(--fill-color);\n",
+              "      border-top-color: var(--fill-color);\n",
+              "      border-right-color: var(--fill-color);\n",
+              "    }\n",
+              "    40% {\n",
+              "      border-color: transparent;\n",
+              "      border-right-color: var(--fill-color);\n",
+              "      border-top-color: var(--fill-color);\n",
+              "    }\n",
+              "    60% {\n",
+              "      border-color: transparent;\n",
+              "      border-right-color: var(--fill-color);\n",
+              "    }\n",
+              "    80% {\n",
+              "      border-color: transparent;\n",
+              "      border-right-color: var(--fill-color);\n",
+              "      border-bottom-color: var(--fill-color);\n",
+              "    }\n",
+              "    90% {\n",
+              "      border-color: transparent;\n",
+              "      border-bottom-color: var(--fill-color);\n",
+              "    }\n",
+              "  }\n",
+              "</style>\n",
+              "\n",
+              "      <script>\n",
+              "        async function quickchart(key) {\n",
+              "          const quickchartButtonEl =\n",
+              "            document.querySelector('#' + key + ' button');\n",
+              "          quickchartButtonEl.disabled = true;  // To prevent multiple clicks.\n",
+              "          quickchartButtonEl.classList.add('colab-df-spinner');\n",
+              "          try {\n",
+              "            const charts = await google.colab.kernel.invokeFunction(\n",
+              "                'suggestCharts', [key], {});\n",
+              "          } catch (error) {\n",
+              "            console.error('Error during call to suggestCharts:', error);\n",
+              "          }\n",
+              "          quickchartButtonEl.classList.remove('colab-df-spinner');\n",
+              "          quickchartButtonEl.classList.add('colab-df-quickchart-complete');\n",
+              "        }\n",
+              "        (() => {\n",
+              "          let quickchartButtonEl =\n",
+              "            document.querySelector('#df-1671a2b0-5939-4bf0-b180-e607fd6939e4 button');\n",
+              "          quickchartButtonEl.style.display =\n",
+              "            google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
+              "        })();\n",
+              "      </script>\n",
+              "    </div>\n",
+              "\n",
+              "  <div id=\"id_d260ca78-0667-4d06-8a24-0f06f6865637\">\n",
+              "    <style>\n",
+              "      .colab-df-generate {\n",
+              "        background-color: #E8F0FE;\n",
+              "        border: none;\n",
+              "        border-radius: 50%;\n",
+              "        cursor: pointer;\n",
+              "        display: none;\n",
+              "        fill: #1967D2;\n",
+              "        height: 32px;\n",
+              "        padding: 0 0 0 0;\n",
+              "        width: 32px;\n",
+              "      }\n",
+              "\n",
+              "      .colab-df-generate:hover {\n",
+              "        background-color: #E2EBFA;\n",
+              "        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);\n",
+              "        fill: #174EA6;\n",
+              "      }\n",
+              "\n",
+              "      [theme=dark] .colab-df-generate {\n",
+              "        background-color: #3B4455;\n",
+              "        fill: #D2E3FC;\n",
+              "      }\n",
+              "\n",
+              "      [theme=dark] .colab-df-generate:hover {\n",
+              "        background-color: #434B5C;\n",
+              "        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);\n",
+              "        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));\n",
+              "        fill: #FFFFFF;\n",
+              "      }\n",
+              "    </style>\n",
+              "    <button class=\"colab-df-generate\" onclick=\"generateWithVariable('dfm')\"\n",
+              "            title=\"Generate code using this dataframe.\"\n",
+              "            style=\"display:none;\">\n",
+              "\n",
+              "  <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\"viewBox=\"0 0 24 24\"\n",
+              "       width=\"24px\">\n",
+              "    <path d=\"M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z\"/>\n",
+              "  </svg>\n",
+              "    </button>\n",
+              "    <script>\n",
+              "      (() => {\n",
+              "      const buttonEl =\n",
+              "        document.querySelector('#id_d260ca78-0667-4d06-8a24-0f06f6865637 button.colab-df-generate');\n",
+              "      buttonEl.style.display =\n",
+              "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
+              "\n",
+              "      buttonEl.onclick = () => {\n",
+              "        google.colab.notebook.generateWithVariable('dfm');\n",
+              "      }\n",
+              "      })();\n",
+              "    </script>\n",
+              "  </div>\n",
+              "\n",
+              "    </div>\n",
+              "  </div>\n"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "dataframe",
+              "variable_name": "dfm",
+              "summary": "{\n  \"name\": \"dfm\",\n  \"rows\": 30,\n  \"fields\": [\n    {\n      \"column\": \"ID\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 8,\n        \"min\": 0,\n        \"max\": 29,\n        \"num_unique_values\": 30,\n        \"samples\": [\n          27,\n          15,\n          23\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"Location\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 2,\n        \"samples\": [\n          \"rural\",\n          \"urban\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"Age\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 3,\n        \"samples\": [\n          \"teen\",\n          \"adult\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"Income\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 3,\n        \"samples\": [\n          \"low\",\n          \"mediam\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"SocialSecurity\",\n      \"properties\": {\n        \"dtype\": \"boolean\",\n        \"num_unique_values\": 2,\n        \"samples\": [\n          false,\n          true\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    }\n  ]\n}"
+            }
+          },
+          "metadata": {},
+          "execution_count": 110
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "QKyotBKWvyh5"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
